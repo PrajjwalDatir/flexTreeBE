@@ -1,10 +1,10 @@
 {
   "name": "flextreebe",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "private": true,
-  "license": "UNLICENSED",
+  "description": "Flex easily with just one link. Connect all your profiles to a single link.",
+  "author": "Prajjwal Datir",
+  "private": false,
+  "license": "AGPL-3.0",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
@@ -23,7 +23,9 @@
   "dependencies": {
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
+    "@nestjs/mongoose": "^9.0.2",
     "@nestjs/platform-express": "^8.0.0",
+    "mongoose": "^6.2.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0"
