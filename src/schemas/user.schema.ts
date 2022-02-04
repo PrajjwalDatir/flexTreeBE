@@ -13,7 +13,7 @@ export class User {
   password: string;
 
   // Name user wants to display
-  @Prop({ required: true })
+  @Prop()
   name: string;
 
   // User writes about themselves
