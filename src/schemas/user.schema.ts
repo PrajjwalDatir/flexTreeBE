@@ -6,6 +6,9 @@ export type UserDocument = User & Document;
 @Schema({ autoIndex: false })
 export class User {
   @Prop({ required: true })
+  username: string;
+
+  @Prop({ required: true })
   email: string;
 
   // Password in encrypted form
@@ -13,19 +16,19 @@ export class User {
   password: string;
 
   // Name user wants to display
-  @Prop()
+  @Prop({ default: '' })
   name: string;
 
   // User writes about themselves
-  @Prop()
+  @Prop({ default: '' })
   description: string;
 
   // The user's profile picture
-  @Prop()
+  @Prop({ default: '' })
   picture: string;
 
   // List of links of type string
-  @Prop([String])
+  @Prop({ default: [] })
   links: string[];
 }
 
